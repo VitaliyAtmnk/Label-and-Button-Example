@@ -27,38 +27,28 @@ namespace WinFormsApp1
 
         private void btnFont_Click(object sender, EventArgs e)
         {
-            float size = lbl.Font.Size;
-            String fontName = lbl.Font.Name;
-
-            if (size >= 24)
-            {
-                lbl.Enabled = false;
-            }
-
-            else
-            {
-                lbl.Font = new Font(fontName, size + 2);
-            }
+            // TODO: Zvìtšit pùvodní font o 2 body
         }
 
         private void btnColor_Click(object sender, EventArgs e)
         {
-            lbl.BackColor = lbl.BackColor == Color.Red ? Color.Blue : Color.Red;
+            // TODO: Zmìnit barvu pozadí na modrou / èervenou.
+            // Pokud je modrá, zmìnit na èervenou, pokud je èervená, zmìnit na modrou.
         }
 
         private void btnBorder_Click(object sender, EventArgs e)
         {
-            lbl.BorderStyle = lbl.BorderStyle == BorderStyle.None ? BorderStyle.FixedSingle : BorderStyle.None;
+            // TODO: Pøepínat mezi BorderStyle.None a BorderStyle.FixedSingle
         }
 
         private void btnAutoSize_Click(object sender, EventArgs e)
         {
-            lbl.AutoSize = !lbl.AutoSize;
+            // TODO: Pøepínat vlastnost AutoSize
         }
 
         private void btnMove_Click(object sender, EventArgs e)
         {
-            lbl.Top -= lbl.Height;
+            // TODO: Posunout label o velikost labelu nahoru + zajistit, aby zùstal viditelný v oknì formuláøe
         }
 
         private void btnReset_Click(object sender, EventArgs e)
